@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOID — A Digital Experience</title>
+    <meta name="description" content="An immersive, interactive digital art experiment pushing the boundaries of web technology.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Trail Canvas -->
+    <canvas id="cursorCanvas"></canvas>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-glitch" data-text="VOID">VOID</div>
+        <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+        <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-brand">V<span class="blink">_</span>ID</a>
+        <div class="nav-links">
+            <a href="#manifesto">001</a>
+            <a href="#warp">002</a>
+            <a href="#cubes">003</a>
+            <a href="#signal">004</a>
+        </div>
+    </nav>
+
+    <!-- Section 0: Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-pre">[ ENTERING THE VOID ]</div>
+            <h1 class="hero-title glitch-text" data-text="VOID.">
+                <span class="char-wrap"><span class="char" style="--i:0">V</span><span class="char" style="--i:1">O</span><span class="char" style="--i:2">I</span><span class="char" style="--i:3">D</span><span class="char accent" style="--i:4">.</span></span>
+            </h1>
+            <p class="hero-sub">A digital experiment at the edge of what browsers can do.</p>
+            <div class="hero-coords">
+                <span id="coordX">X: 0000</span>
+                <span class="coord-sep">|</span>
+                <span id="coordY">Y: 0000</span>
+                <span class="coord-sep">|</span>
+                <span id="fps">FPS: 60</span>
+            </div>
+        </div>
+        <div class="scroll-prompt">
+            <div class="scroll-arrows">
+                <span>▼</span><span>▼</span><span>▼</span>
+            </div>
+            <span class="scroll-label">SCROLL TO DESCEND</span>
+        </div>
+    </section>
+
+    <!-- Section 1: Manifesto -->
+    <section class="section manifesto" id="manifesto">
+        <div class="section-num">001</div>
+        <div class="container">
+            <h2 class="split-reveal">
+                <span class="word" style="--d:0">The</span>
+                <span class="word" style="--d:1">web</span>
+                <span class="word" style="--d:2">is</span>
+                <span class="word" style="--d:3">not</span>
+                <span class="word accent" style="--d:4">flat.</span>
+            </h2>
+            <div class="manifesto-grid">
+                <div class="manifesto-card reveal">
+                    <div class="card-num">01</div>
+                    <h3>Push Pixels</h3>
+                    <p>Every CSS property is a brushstroke. Every keyframe is a heartbeat. We don't build pages — we sculpt experiences.</p>
+                    <div class="card-line"></div>
+                </div>
+                <div class="manifesto-card reveal">
+                    <div class="card-num">02</div>
+                    <h3>Break Rules</h3>
+                    <p>Forget safe layouts. Forget bland transitions. The browser is a canvas and we're painting outside the frame.</p>
+                    <div class="card-line"></div>
+                </div>
+                <div class="manifesto-card reveal">
+                    <div class="card-num">03</div>
+                    <h3>Feel Something</h3>
+                    <p>If your website doesn't make someone stop scrolling, you haven't tried hard enough. Make them feel the void.</p>
+                    <div class="card-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Warp Field -->
+    <section class="section warp-section" id="warp">
+        <div class="section-num">002</div>
+        <canvas id="warpCanvas"></canvas>
+        <div class="warp-content">
+            <h2 class="warp-title reveal">WARP<br><em>FIELD</em></h2>
+            <p class="warp-desc reveal">Move your mouse. The void responds.</p>
+        </div>
+    </section>
+
+    <!-- Section 3: 3D Geometry -->
+    <section class="section cubes-section" id="cubes">
+        <div class="section-num">003</div>
+        <div class="container">
+            <h2 class="section-heading reveal">DIMENSIONAL<br><em>SHIFT</em></h2>
+            <div class="geometry-stage">
+                <div class="geo-scene">
+                    <div class="cube cube-1">
+                        <div class="face front"></div><div class="face back"></div>
+                        <div class="face left"></div><div class="face right"></div>
+                        <div class="face top"></div><div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="geo-scene">
+                    <div class="cube cube-2">
+                        <div class="face front"></div><div class="face back"></div>
+                        <div class="face left"></div><div class="face right"></div>
+                        <div class="face top"></div><div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="geo-scene">
+                    <div class="cube cube-3">
+                        <div class="face front"></div><div class="face back"></div>
+                        <div class="face left"></div><div class="face right"></div>
+                        <div class="face top"></div><div class="face bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-readout">
+                <span>TRANSFORM: ROTATE3D</span>
+                <span>PERSPECTIVE: 800PX</span>
+                <span>ANIMATION: INFINITE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Signal -->
+    <section class="section signal-section" id="signal">
+        <div class="section-num">004</div>
+        <div class="container">
+            <h2 class="section-heading reveal">SIGNAL<br><em>LOST</em></h2>
+            <div class="signal-bars">
+                <div class="bar" style="--h:20%;--d:0s"></div><div class="bar" style="--h:45%;--d:0.1s"></div>
+                <div class="bar" style="--h:70%;--d:0.2s"></div><div class="bar" style="--h:35%;--d:0.3s"></div>
+                <div class="bar" style="--h:90%;--d:0.4s"></div><div class="bar" style="--h:50%;--d:0.5s"></div>
+                <div class="bar" style="--h:80%;--d:0.6s"></div><div class="bar" style="--h:25%;--d:0.7s"></div>
+                <div class="bar" style="--h:60%;--d:0.8s"></div><div class="bar" style="--h:95%;--d:0.9s"></div>
+                <div class="bar" style="--h:40%;--d:1.0s"></div><div class="bar" style="--h:75%;--d:1.1s"></div>
+                <div class="bar" style="--h:55%;--d:1.2s"></div><div class="bar" style="--h:85%;--d:1.3s"></div>
+                <div class="bar" style="--h:30%;--d:1.4s"></div><div class="bar" style="--h:65%;--d:1.5s"></div>
+                <div class="bar" style="--h:100%;--d:1.6s"></div><div class="bar" style="--h:45%;--d:1.7s"></div>
+                <div class="bar" style="--h:70%;--d:1.8s"></div><div class="bar" style="--h:50%;--d:1.9s"></div>
+            </div>
+            <div class="terminal-block reveal">
+                <div class="terminal-header"><span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span><span class="t-title">void_terminal</span></div>
+                <div class="terminal-body" id="terminal">
+                    <p class="t-line" style="--d:0.2s"><span class="t-prompt">$</span> initializing void.experience...</p>
+                    <p class="t-line" style="--d:0.6s"><span class="t-prompt">$</span> loading particles... <span class="t-ok">OK</span></p>
+                    <p class="t-line" style="--d:1.0s"><span class="t-prompt">$</span> loading 3d_geometry... <span class="t-ok">OK</span></p>
+                    <p class="t-line" style="--d:1.4s"><span class="t-prompt">$</span> loading warp_field... <span class="t-ok">OK</span></p>
+                    <p class="t-line" style="--d:1.8s"><span class="t-prompt">$</span> signal_strength: <span class="t-warn">UNSTABLE</span></p>
+                    <p class="t-line" style="--d:2.2s"><span class="t-prompt">$</span> reality.exe has stopped responding</p>
+                    <p class="t-line" style="--d:2.6s"><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outro -->
+    <section class="section outro">
+        <div class="container">
+            <div class="outro-content">
+                <h2 class="glitch-text" data-text="END_TRANSMISSION">END_TRANSMISSION</h2>
+                <p>Built with vanilla HTML, CSS, and JavaScript.<br>No frameworks. No libraries. Pure code.</p>
+                <a href="../index.html" class="back-btn">← Return to reality</a>
+            </div>
+            <div class="credits">
+                <span>VOID v1.0</span>
+                <span>A portfolio piece by Alex</span>
+                <span>© 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

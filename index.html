@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex — Junior Web Developer & Designer</title>
+    <meta name="description" content="Alex is a junior web developer and designer crafting modern, responsive websites and immersive digital experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-bar"></div>
+            <span class="loader-text">ALEX</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                    <text x="18" y="23" text-anchor="middle" fill="currentColor" font-size="16" font-weight="700" font-family="Inter, sans-serif">A</text>
+                </svg>
+                <span>Alex</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="nav-cta">Let's Talk</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Let's Talk</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge reveal">
+                <span class="pulse-dot"></span>
+                Open to opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="reveal-line"><span>I craft</span></span>
+                <span class="reveal-line delay-1"><span>digital</span></span>
+                <span class="reveal-line delay-2"><span>experiences<em>.</em></span></span>
+            </h1>
+            <p class="hero-desc reveal delay-3">Hi, I'm Alex — a junior web developer & designer who turns ideas into polished, responsive websites with clean code and thoughtful UI.</p>
+            <div class="hero-btns reveal delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats reveal delay-5">
+                <div class="stat">
+                    <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Passion</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">01 — Selected Work</span>
+                <h2 class="section-title reveal delay-1">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <a href="project-1-portfolio/index.html" class="project-link">
+                        <div class="project-image">
+                            <div class="project-preview-frame">
+                                <div class="frame-dots"><span></span><span></span><span></span></div>
+                                <div class="frame-url">ember-and-oak.ro</div>
+                            </div>
+                            <div class="project-preview-wrap">
+                                <iframe src="project-1-portfolio/index.html" class="project-iframe" loading="lazy" tabindex="-1" title="Ember & Oak preview"></iframe>
+                            </div>
+                            <div class="project-hover">
+                                <span class="project-arrow">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-tags"><span>Restaurant</span><span>Web Design</span></div>
+                            <h3>Ember & Oak — Fine Dining Restaurant</h3>
+                            <p>A warm, elegant restaurant website with a seasonal menu, reservation form, and open-fire cooking theme.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card reveal delay-1">
+                    <a href="project-2-landing/index.html" class="project-link">
+                        <div class="project-image">
+                            <div class="project-preview-frame">
+                                <div class="frame-dots"><span></span><span></span><span></span></div>
+                                <div class="frame-url">verdantroasters.com</div>
+                            </div>
+                            <div class="project-preview-wrap">
+                                <iframe src="project-2-landing/index.html" class="project-iframe" loading="lazy" tabindex="-1" title="Verdant Roasters preview"></iframe>
+                            </div>
+                            <div class="project-hover">
+                                <span class="project-arrow">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-tags"><span>Landing Page</span><span>E-Commerce</span></div>
+                            <h3>Verdant Roasters — Coffee Brand</h3>
+                            <p>A warm, artisanal landing page for a premium coffee roaster featuring product cards, pricing tiers, and testimonials.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card reveal delay-2">
+                    <a href="project-3-redesign/index.html" class="project-link">
+                        <div class="project-image">
+                            <div class="project-preview-frame">
+                                <div class="frame-dots"><span></span><span></span><span></span></div>
+                                <div class="frame-url">finflow-redesign.case</div>
+                            </div>
+                            <div class="project-preview-wrap">
+                                <iframe src="project-3-redesign/index.html" class="project-iframe" loading="lazy" tabindex="-1" title="FinFlow preview"></iframe>
+                            </div>
+                            <div class="project-hover">
+                                <span class="project-arrow">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-tags"><span>UI/UX</span><span>Case Study</span></div>
+                            <h3>FinFlow — Banking App Redesign</h3>
+                            <p>A UI/UX case study reimagining a banking app with glassmorphism, interactive mockups, and a complete design system.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card reveal delay-3">
+                    <a href="project-4-components/index.html" class="project-link">
+                        <div class="project-image">
+                            <div class="project-preview-frame">
+                                <div class="frame-dots"><span></span><span></span><span></span></div>
+                                <div class="frame-url">void.experience</div>
+                            </div>
+                            <div class="project-preview-wrap">
+                                <iframe src="project-4-components/index.html" class="project-iframe" loading="lazy" tabindex="-1" title="VOID preview"></iframe>
+                            </div>
+                            <div class="project-hover">
+                                <span class="project-arrow">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-tags"><span>Creative Dev</span><span>Canvas</span><span>3D CSS</span></div>
+                            <h3>VOID — A Digital Experience</h3>
+                            <p>An immersive interactive experiment with particle systems, hyperspace warp fields, 3D geometry, and glitch effects — all vanilla JS.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <span class="section-tag reveal">02 — About Me</span>
+                    <h2 class="section-title reveal delay-1">Passionate about building things that live on the web.</h2>
+                    <p class="reveal delay-2">I'm Alex, a junior web developer and designer based in Romania with a keen eye for detail and a love for clean, modern aesthetics. I started my journey in web development because I was fascinated by the idea of turning a blank screen into something interactive and alive.</p>
+                    <p class="reveal delay-3">I focus on writing semantic HTML, crafting pixel-perfect CSS, and building interactive experiences with JavaScript. Every project is an opportunity to learn something new and push my skills further. I believe great design isn't just about looks — it's about how it works and how it makes people feel.</p>
+                </div>
+                <div class="about-right reveal delay-2">
+                    <div class="about-card glass">
+                        <div class="about-card-glow"></div>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <span class="value-num">01</span>
+                                <div>
+                                    <h4>Detail-Oriented</h4>
+                                    <p>Every pixel matters. I pay close attention to spacing, typography, and micro-interactions.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-num">02</span>
+                                <div>
+                                    <h4>Always Learning</h4>
+                                    <p>The web evolves fast. I stay curious and constantly explore new tools and techniques.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-num">03</span>
+                                <div>
+                                    <h4>User-First Thinking</h4>
+                                    <p>I design with real people in mind — clean interfaces, intuitive flows, accessible code.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">03 — Skills & Tools</span>
+                <h2 class="section-title reveal delay-1">My tech toolbox.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7l8-4 8 4M4 7v10l8 4M4 7l8 4M20 7v10l-8 4M20 7l-8 4M12 11v10"/></svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and SEO-friendly structure.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </div>
+                <div class="skill-card reveal delay-1">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3c2 3.5 3 7 3 9s-1 5.5-3 9M12 3c-2 3.5-3 7-3 9s1 5.5 3 9M3 12h18"/></svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, custom properties, and responsive design.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                </div>
+                <div class="skill-card reveal delay-2">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, ES6+, async patterns, and interactive UIs.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+                <div class="skill-card reveal delay-3">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach with fluid layouts across all devices.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </div>
+                <div class="skill-card reveal delay-4">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, branching workflows, and collaboration.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-card reveal delay-5">
+                    <div class="skill-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h4M18 12h4M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    </div>
+                    <h3>Figma</h3>
+                    <p>UI design, prototyping, and design-to-code workflows.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">04 — What I Do</span>
+                <h2 class="section-title reveal delay-1">Services I offer.</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, performant websites built with modern HTML, CSS, and JavaScript — from portfolios to landing pages.</p>
+                    <ul class="service-list">
+                        <li>Custom Websites</li><li>Landing Pages</li><li>Responsive Layouts</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3c2 3.5 3 7 3 9s-1 5.5-3 9M12 3c-2 3.5-3 7-3 9s1 5.5 3 9M3 12h18"/></svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Clean, intuitive interfaces designed with users in mind. Wireframes through high-fidelity mockups and prototypes.</p>
+                    <ul class="service-list">
+                        <li>Interface Design</li><li>Prototyping</li><li>User Flows</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Every project starts mobile. Fluid grids, flexible images, and breakpoint-driven layouts that look great everywhere.</p>
+                    <ul class="service-list">
+                        <li>Mobile Optimization</li><li>Touch Interactions</li><li>Cross-Browser</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Interactive Components</h3>
+                    <p>Custom JavaScript components — modals, accordions, carousels, and micro-animations built without frameworks.</p>
+                    <ul class="service-list">
+                        <li>Vanilla JS</li><li>Animations</li><li>Accessibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>Let's Work Together</span><span>★</span>
+            <span>Let's Work Together</span><span>★</span>
+            <span>Let's Work Together</span><span>★</span>
+            <span>Let's Work Together</span><span>★</span>
+            <span>Let's Work Together</span><span>★</span>
+            <span>Let's Work Together</span><span>★</span>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact section-dark">
+        <div class="container">
+            <div class="contact-inner">
+                <span class="section-tag reveal">05 — Contact</span>
+                <h2 class="contact-title reveal delay-1">
+                    <span>Have a project in mind?</span>
+                    <span><em>Let's talk.</em></span>
+                </h2>
+                <div class="contact-links reveal delay-2">
+                    <a href="mailto:alexioans@yahoo.ro" class="contact-row">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">alexioans@yahoo.ro</span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="https://github.com/kai481" target="_blank" rel="noopener" class="contact-row">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/kai481</span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Alex. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/kai481" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:alexioans@yahoo.ro">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

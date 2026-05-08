@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdant Roasters — Premium Single-Origin Coffee</title>
+    <meta name="description" content="Verdant Roasters sources and roasts the world's finest single-origin beans.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar"><p>Free shipping on orders over $50 — <a href="#shop">Shop Now</a></p></div>
+
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">Verdant<small>ROASTERS</small></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#story">Our Story</a>
+                <a href="#beans">The Beans</a>
+                <a href="#process">Process</a>
+                <a href="#subscribe" class="nav-cta">Subscribe & Save</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+        <nav><a href="#story">Our Story</a><a href="#beans">The Beans</a><a href="#process">Process</a><a href="#subscribe">Subscribe</a></nav>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="hero-eyebrow reveal">EST. 2019 — PORTLAND, OR</span>
+            <h1 class="hero-title reveal delay-1">Coffee, crafted<br>with <em>intention</em>.</h1>
+            <p class="hero-desc reveal delay-2">From the highlands of Ethiopia to your morning ritual — every bean is hand-selected, precision-roasted, and delivered at peak freshness.</p>
+            <div class="hero-actions reveal delay-3">
+                <a href="#beans" class="btn btn-warm">Explore Our Beans</a>
+                <a href="#story" class="btn btn-ghost-warm">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-strip">
+        <div class="container features-grid">
+            <div class="feature-item reveal">
+                <h4>Direct Trade</h4>
+                <p>Sourced from 12 partner farms</p>
+            </div>
+            <div class="feature-item reveal delay-1">
+                <h4>Roasted Fresh</h4>
+                <p>Small-batch, shipped within 48hrs</p>
+            </div>
+            <div class="feature-item reveal delay-2">
+                <h4>Sustainably Grown</h4>
+                <p>Organic, shade-grown, carbon-neutral</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="section story">
+        <div class="container story-grid">
+            <div class="story-visual reveal">
+                <img class="story-img" src="images/story.png" alt="Coffee roaster at work in Verdant Roasters" loading="lazy">
+                <div class="story-badge"><span class="badge-num">7</span><span>Years of<br>Excellence</span></div>
+            </div>
+            <div class="story-content">
+                <span class="section-tag reveal">Our Story</span>
+                <h2 class="reveal delay-1">Born from a love of the <em>perfect cup</em>.</h2>
+                <p class="reveal delay-2">Verdant Roasters started in a garage in Portland with a single Probat roaster and an obsession: what does the perfect cup taste like? Seven years later, we've traveled to 14 countries, built direct relationships with small-hold farmers, and served over 2 million cups.</p>
+                <p class="reveal delay-3">Great coffee is more than a commodity — it's a craft, a connection, and a daily act of care.</p>
+                <div class="story-stats reveal delay-4">
+                    <div class="s-stat"><span class="s-stat-num" data-count="14">0</span><span class="s-stat-label">Countries</span></div>
+                    <div class="s-stat"><span class="s-stat-num" data-count="12">0</span><span class="s-stat-label">Farms</span></div>
+                    <div class="s-stat"><span class="s-stat-num">2M+</span><span class="s-stat-label">Cups Served</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beans" class="section beans section-cream">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag reveal">The Beans</span>
+                <h2 class="reveal delay-1">Our signature collection.</h2>
+            </div>
+            <div class="beans-grid">
+                <div class="bean-card reveal">
+                    <img class="bean-img" src="images/bean-light.png" alt="Sunlit Bloom light roast Ethiopian coffee" loading="lazy">
+                    <div class="bean-body">
+                        <span class="bean-origin">ETHIOPIA · YIRGACHEFFE</span>
+                        <h3>Sunlit Bloom</h3>
+                        <p>Jasmine, bergamot, honey sweetness. Light roast.</p>
+                        <div class="bean-details">
+                            <div class="bean-detail"><span>Roast</span><div class="roast-bar"><div class="roast-fill" style="width:30%"></div></div></div>
+                            <div class="bean-detail"><span>Body</span><div class="roast-bar"><div class="roast-fill" style="width:40%"></div></div></div>
+                            <div class="bean-detail"><span>Acidity</span><div class="roast-bar"><div class="roast-fill" style="width:75%"></div></div></div>
+                        </div>
+                        <div class="bean-footer"><span class="bean-price">$22 <small>/ 12oz</small></span><button class="btn btn-bean">Add to Cart</button></div>
+                    </div>
+                </div>
+                <div class="bean-card reveal delay-1">
+                    <img class="bean-img" src="images/bean-medium.png" alt="Velvet Canyon medium roast Colombian coffee" loading="lazy">
+                    <div class="bean-body">
+                        <span class="bean-origin">COLOMBIA · HUILA</span>
+                        <h3>Velvet Canyon</h3>
+                        <p>Dark chocolate, caramel, toasted walnut. Medium roast.</p>
+                        <div class="bean-details">
+                            <div class="bean-detail"><span>Roast</span><div class="roast-bar"><div class="roast-fill" style="width:55%"></div></div></div>
+                            <div class="bean-detail"><span>Body</span><div class="roast-bar"><div class="roast-fill" style="width:70%"></div></div></div>
+                            <div class="bean-detail"><span>Acidity</span><div class="roast-bar"><div class="roast-fill" style="width:45%"></div></div></div>
+                        </div>
+                        <div class="bean-footer"><span class="bean-price">$20 <small>/ 12oz</small></span><button class="btn btn-bean">Add to Cart</button></div>
+                    </div>
+                </div>
+                <div class="bean-card reveal delay-2">
+                    <img class="bean-img" src="images/bean-dark.png" alt="Midnight Ember dark roast Sumatran coffee" loading="lazy">
+                    <div class="bean-body">
+                        <span class="bean-origin">SUMATRA · MANDHELING</span>
+                        <h3>Midnight Ember</h3>
+                        <p>Smoky cedar, dark berries, molasses finish. Dark roast.</p>
+                        <div class="bean-details">
+                            <div class="bean-detail"><span>Roast</span><div class="roast-bar"><div class="roast-fill" style="width:90%"></div></div></div>
+                            <div class="bean-detail"><span>Body</span><div class="roast-bar"><div class="roast-fill" style="width:85%"></div></div></div>
+                            <div class="bean-detail"><span>Acidity</span><div class="roast-bar"><div class="roast-fill" style="width:20%"></div></div></div>
+                        </div>
+                        <div class="bean-footer"><span class="bean-price">$24 <small>/ 12oz</small></span><button class="btn btn-bean">Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag reveal">Our Process</span>
+                <h2 class="reveal delay-1">From seed to sip.</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step reveal"><div class="step-num">01</div><div class="step-content"><h3>Source</h3><p>We visit farms personally, cupping hundreds of samples to find the top 2%.</p></div></div>
+                <div class="process-step reveal delay-1"><div class="step-num">02</div><div class="step-content"><h3>Roast</h3><p>Small batches on a Loring S35, profiled for each bean's unique character.</p></div></div>
+                <div class="process-step reveal delay-2"><div class="step-num">03</div><div class="step-content"><h3>Pack</h3><p>Nitrogen-flushed bags sealed within hours of roasting.</p></div></div>
+                <div class="process-step reveal delay-3"><div class="step-num">04</div><div class="step-content"><h3>Deliver</h3><p>Carbon-neutral shipping to your door in 2-3 business days.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="section subscribe-section">
+        <div class="container subscribe-inner">
+            <span class="section-tag reveal">Subscribe & Save</span>
+            <h2 class="reveal delay-1">Never run out of great coffee.</h2>
+            <p class="sub-desc reveal delay-2">Choose your beans, set your frequency, save 15%. Cancel anytime.</p>
+            <div class="sub-tiers reveal delay-3">
+                <div class="sub-tier">
+                    <h4>Starter</h4>
+                    <div class="sub-price">$17<small>/mo</small></div>
+                    <ul><li>1 bag (12oz) monthly</li><li>Any single origin</li><li>Free shipping</li></ul>
+                    <button class="btn btn-warm-outline">Select</button>
+                </div>
+                <div class="sub-tier featured">
+                    <div class="sub-badge">Most Popular</div>
+                    <h4>Explorer</h4>
+                    <div class="sub-price">$32<small>/mo</small></div>
+                    <ul><li>2 bags monthly</li><li>Seasonal picks</li><li>Free shipping + tasting notes</li></ul>
+                    <button class="btn btn-warm">Select</button>
+                </div>
+                <div class="sub-tier">
+                    <h4>Connoisseur</h4>
+                    <div class="sub-price">$54<small>/mo</small></div>
+                    <ul><li>3 bags + 1 micro-lot</li><li>Early access</li><li>Video brewing guides</li></ul>
+                    <button class="btn btn-warm-outline">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials section-cream">
+        <div class="container">
+            <div class="section-header-center">
+                <span class="section-tag reveal">Reviews</span>
+                <h2 class="reveal delay-1">Loved by coffee people.</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best Ethiopian I've had outside of Addis. Floral notes are unreal."</p>
+                    <div class="testimonial-author"><div class="author-avatar">JR</div><div><strong>Jamie Rodriguez</strong><span>Home Barista</span></div></div>
+                </div>
+                <div class="testimonial-card reveal delay-1">
+                    <div class="stars">★★★★★</div>
+                    <p>"We switched our café to Verdant. Customers noticed immediately — sales up 22%."</p>
+                    <div class="testimonial-author"><div class="author-avatar">MK</div><div><strong>Maya Kimura</strong><span>Café Owner</span></div></div>
+                </div>
+                <div class="testimonial-card reveal delay-2">
+                    <div class="stars">★★★★★</div>
+                    <p>"The subscription is a game-changer. Fresh coffee like clockwork."</p>
+                    <div class="testimonial-author"><div class="author-avatar">DL</div><div><strong>Daniel Lee</strong><span>Subscriber</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand"><h3>Verdant Roasters</h3><p>Premium single-origin coffee,<br>roasted in Portland, OR.</p></div>
+            <div class="footer-col"><h4>Shop</h4><a href="#">All Coffee</a><a href="#">Subscriptions</a><a href="#">Gift Cards</a></div>
+            <div class="footer-col"><h4>Company</h4><a href="#">Our Story</a><a href="#">Sustainability</a><a href="#">Careers</a></div>
+            <div class="footer-col"><h4>Support</h4><a href="#">Contact</a><a href="#">FAQ</a><a href="#">Shipping</a></div>
+        </div>
+        <div class="container footer-bottom"><p>&copy; 2026 Verdant Roasters</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow — Banking App UI Redesign Concept</title>
+    <meta name="description" content="A UI redesign concept for FinFlow, a modern banking app. Showcasing glassmorphism, dark UI, and improved UX flows.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav -->
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◆</span> FinFlow <span class="logo-tag">Redesign</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#problems">Problems</a>
+                <a href="#screens">Screens</a>
+                <a href="#system">Design System</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay">
+        <nav><a href="#overview">Overview</a><a href="#problems">Problems</a><a href="#screens">Screens</a><a href="#system">Design System</a></nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="container hero-content">
+            <div class="case-badge reveal">UI/UX Case Study</div>
+            <h1 class="reveal delay-1">Reimagining <em>FinFlow</em></h1>
+            <p class="hero-sub reveal delay-2">A complete visual overhaul of a legacy banking app — making financial management feel modern, intuitive, and even enjoyable.</p>
+            <div class="hero-meta reveal delay-3">
+                <div class="meta-item"><span class="meta-label">Role</span><span>Lead UI Designer</span></div>
+                <div class="meta-divider"></div>
+                <div class="meta-item"><span class="meta-label">Timeline</span><span>8 Weeks</span></div>
+                <div class="meta-divider"></div>
+                <div class="meta-item"><span class="meta-label">Tools</span><span>Figma, Principle</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag reveal">01 — Overview</span>
+                <h2 class="reveal delay-1">The brief.</h2>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card reveal">
+                    <h3>The Client</h3>
+                    <p>FinFlow is a mid-market banking app serving 350K+ users. Despite solid functionality, their app felt dated and had an industry-trailing NPS score of 18.</p>
+                </div>
+                <div class="overview-card reveal delay-1">
+                    <h3>The Goal</h3>
+                    <p>Redesign the core experience — dashboard, transactions, transfers, and cards — to reduce cognitive load, increase engagement, and modernize the visual language.</p>
+                </div>
+                <div class="overview-card reveal delay-2">
+                    <h3>The Outcome</h3>
+                    <p>After launch, FinFlow saw a 42% increase in daily active users, NPS jumped to 61, and support tickets dropped by 35%.</p>
+                </div>
+            </div>
+            <div class="outcome-stats reveal delay-3">
+                <div class="o-stat"><span class="o-num">+42%</span><span class="o-label">Daily Active Users</span></div>
+                <div class="o-stat"><span class="o-num">61</span><span class="o-label">NPS Score (was 18)</span></div>
+                <div class="o-stat"><span class="o-num">-35%</span><span class="o-label">Support Tickets</span></div>
+                <div class="o-stat"><span class="o-num">4.8★</span><span class="o-label">App Store Rating</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems -->
+    <section id="problems" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag reveal">02 — Problems Identified</span>
+                <h2 class="reveal delay-1">What wasn't working.</h2>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card reveal">
+                    <div class="problem-num">01</div>
+                    <h3>Visual Clutter</h3>
+                    <p>The dashboard crammed 14 different data points above the fold with no visual hierarchy. Users couldn't find their balance quickly.</p>
+                    <div class="before-after">
+                        <div class="ba-item before"><span class="ba-label">Before</span><div class="ba-mock" style="background:linear-gradient(135deg,#1a1a2e,#2d2d44);"></div></div>
+                        <div class="ba-item after"><span class="ba-label">After</span><div class="ba-mock" style="background:linear-gradient(135deg,#0f172a,#1e293b);border:1px solid rgba(99,102,241,.2);"></div></div>
+                    </div>
+                </div>
+                <div class="problem-card reveal delay-1">
+                    <div class="problem-num">02</div>
+                    <h3>Confusing Navigation</h3>
+                    <p>5-level deep hamburger menu with inconsistent back-button behavior. Users averaged 6+ taps to complete a simple transfer.</p>
+                    <div class="improvement-metric">
+                        <span>Taps to Transfer</span>
+                        <div class="metric-bars">
+                            <div class="metric-bar"><div class="bar-fill old" style="width:85%">6 taps</div></div>
+                            <div class="metric-bar"><div class="bar-fill new" style="width:35%">2 taps</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-card reveal delay-2">
+                    <div class="problem-num">03</div>
+                    <h3>Outdated Visual Design</h3>
+                    <p>Flat grey UI with system fonts and no personality. The app felt generic compared to modern fintech competitors like Revolut and N26.</p>
+                </div>
+                <div class="problem-card reveal delay-3">
+                    <div class="problem-num">04</div>
+                    <h3>Poor Feedback</h3>
+                    <p>No loading states, no success confirmations, no micro-interactions. Users were left guessing whether actions completed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens -->
+    <section id="screens" class="section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="tag reveal">03 — Redesigned Screens</span>
+                <h2 class="reveal delay-1">The new FinFlow.</h2>
+                <p class="reveal delay-2">Glassmorphism, depth, and clarity — every screen designed for instant comprehension.</p>
+            </div>
+            <div class="screens-showcase">
+                <!-- Dashboard mockup -->
+                <div class="screen-group reveal">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="mock-header">
+                                <span>Good morning, Alex</span>
+                                <div class="mock-avatar"></div>
+                            </div>
+                            <div class="mock-balance-card">
+                                <span class="mock-label">Total Balance</span>
+                                <span class="mock-amount">$24,830.50</span>
+                                <div class="mock-trend">↑ 12.4% this month</div>
+                            </div>
+                            <div class="mock-quick-actions">
+                                <div class="mock-action">Send</div>
+                                <div class="mock-action">Request</div>
+                                <div class="mock-action">Cards</div>
+                                <div class="mock-action">More</div>
+                            </div>
+                            <div class="mock-transactions">
+                                <div class="mock-tx"><div class="tx-icon" style="background:#6366f1">S</div><div class="tx-info"><strong>Spotify</strong><span>Subscription</span></div><span class="tx-amount">-$9.99</span></div>
+                                <div class="mock-tx"><div class="tx-icon" style="background:#10b981">D</div><div class="tx-info"><strong>Direct Deposit</strong><span>Payroll</span></div><span class="tx-amount green">+$3,200</span></div>
+                                <div class="mock-tx"><div class="tx-icon" style="background:#f59e0b">A</div><div class="tx-info"><strong>Amazon</strong><span>Shopping</span></div><span class="tx-amount">-$67.40</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Dashboard</h3>
+                        <p>Balance front-and-center with a glassmorphic card. Quick actions reduce tap count by 65%. Recent transactions use clear iconography and color-coded amounts.</p>
+                    </div>
+                </div>
+
+                <!-- Cards Screen -->
+                <div class="screen-group reverse reveal delay-1">
+                    <div class="phone-frame">
+                        <div class="phone-screen dark-screen">
+                            <div class="mock-header"><span>My Cards</span><span class="mock-add">+ Add</span></div>
+                            <div class="mock-card-visual">
+                                <div class="virtual-card">
+                                    <span class="vc-type">VISA</span>
+                                    <span class="vc-number">•••• •••• •••• 4291</span>
+                                    <div class="vc-bottom"><span>ALEX MORGAN</span><span>09/28</span></div>
+                                </div>
+                            </div>
+                            <div class="mock-card-actions">
+                                <div class="card-act">Freeze</div>
+                                <div class="card-act">Limits</div>
+                                <div class="card-act">PIN</div>
+                                <div class="card-act">Details</div>
+                            </div>
+                            <div class="mock-spending">
+                                <h4>Monthly Spending</h4>
+                                <div class="spending-bar"><div class="spending-fill" style="width:62%"></div></div>
+                                <span class="spending-text">$1,240 of $2,000 limit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Cards Management</h3>
+                        <p>Swipeable card carousel with real-time spending visualization. One-tap freeze, limits control, and virtual card generation — all without leaving the screen.</p>
+                    </div>
+                </div>
+
+                <!-- Transfer Screen -->
+                <div class="screen-group reveal delay-2">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="mock-header"><span>Send Money</span><span class="mock-close">✕</span></div>
+                            <div class="mock-recipient">
+                                <div class="recipient-avatar" style="background:#ec4899">JW</div>
+                                <div><strong>Jamie Walker</strong><br><span style="opacity:.5;font-size:12px">@jamie · Last sent 3d ago</span></div>
+                            </div>
+                            <div class="mock-amount-input">
+                                <span class="amount-currency">$</span>
+                                <span class="amount-value">150<span class="amount-cursor">|</span></span>
+                            </div>
+                            <div class="mock-note">Add a note: "Dinner split 🍕"</div>
+                            <div class="mock-send-btn">Send $150.00</div>
+                        </div>
+                    </div>
+                    <div class="screen-info">
+                        <h3>Send Money</h3>
+                        <p>Two-tap transfers with smart recipient suggestions. Large amount display with real-time validation. Optional notes with emoji support for personal context.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design System -->
+    <section id="system" class="section section-dark">
+        <div class="container">
+            <div class="section-header center">
+                <span class="tag reveal">04 — Design System</span>
+                <h2 class="reveal delay-1">Built to scale.</h2>
+            </div>
+            <div class="ds-grid">
+                <div class="ds-card reveal">
+                    <h3>Color Palette</h3>
+                    <div class="color-swatches">
+                        <div class="swatch" style="background:#0f172a"><span>#0f172a</span></div>
+                        <div class="swatch" style="background:#1e293b"><span>#1e293b</span></div>
+                        <div class="swatch" style="background:#6366f1"><span>#6366f1</span></div>
+                        <div class="swatch" style="background:#818cf8"><span>#818cf8</span></div>
+                        <div class="swatch" style="background:#10b981"><span>#10b981</span></div>
+                        <div class="swatch" style="background:#f43f5e"><span>#f43f5e</span></div>
+                    </div>
+                </div>
+                <div class="ds-card reveal delay-1">
+                    <h3>Typography</h3>
+                    <div class="type-samples">
+                        <div class="type-sample"><span class="type-name">Outfit Bold</span><span class="type-preview" style="font-size:32px;font-weight:700">Aa</span></div>
+                        <div class="type-sample"><span class="type-name">Outfit Regular</span><span class="type-preview" style="font-size:24px">Aa</span></div>
+                        <div class="type-sample"><span class="type-name">JetBrains Mono</span><span class="type-preview mono" style="font-size:20px">0123</span></div>
+                    </div>
+                </div>
+                <div class="ds-card reveal delay-2">
+                    <h3>Components</h3>
+                    <div class="component-pills">
+                        <span class="comp-pill">Buttons</span><span class="comp-pill">Cards</span><span class="comp-pill">Inputs</span>
+                        <span class="comp-pill">Modals</span><span class="comp-pill">Toasts</span><span class="comp-pill">Charts</span>
+                        <span class="comp-pill">Avatars</span><span class="comp-pill">Tabs</span><span class="comp-pill">Badges</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="section results">
+        <div class="container results-inner">
+            <span class="tag reveal">05 — Results</span>
+            <h2 class="reveal delay-1">Impact that speaks for itself.</h2>
+            <blockquote class="reveal delay-2">"The redesign didn't just look better — it fundamentally changed how our users interact with their finances. We saw metrics we didn't think were possible for a banking app."</blockquote>
+            <cite class="reveal delay-3">— Sarah Chen, VP of Product at FinFlow</cite>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>FinFlow Redesign — Concept Case Study &copy; 2026</p>
+            <p>Designed as a portfolio piece. FinFlow is a fictional brand.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
